@@ -49,6 +49,40 @@
   - dimension: user_name
     type: string
     sql: ${TABLE}.user_name
+    
+  - measure: sum_rev_score
+    type: sum
+    sql: ${rev_score}
+
+  - measure: sum_food_score
+    type: sum
+    sql: ${food_score}
+
+  - measure: sum_amb_score
+    type: sum
+    sql: ${amb_score}
+
+  - measure: sum_service_score
+    type: sum
+    sql: ${service_score}
+
+## Averages
+  - measure: avg_rev_score
+    type: average
+    sql: ${rev_score}
+
+  - measure: avg_food_score
+    type: average
+    sql: ${food_score}
+
+  - measure: avg_amb_score
+    type: average
+    sql: ${amb_score}
+
+  - measure: avg_service_score
+    type: average
+    sql: ${service_score}
+
 
   - measure: count
     type: count
