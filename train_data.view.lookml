@@ -26,6 +26,11 @@
   - dimension: longi
     type: number
     sql: ${TABLE}.longi
+    
+  - dimension: restaurant_location
+    type: location
+    sql_latitude: ${lattd}
+    sql_longitude: ${longi}
 
   - dimension: rest_id
     type: string
